@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>upload an image to email form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+    <section class="col-xs-12" style="margin-top:15px;">
+          <form class="form-horizontal">
+            <div class="form-group">
+                <label class="col-sm-3 control-label" for="required-name">Name</label>
+								<div class="col-sm-9" style="margin-bottom:15px;">
+								  <input class="form-control" type="text" id="required-name" name="required-name">
+							</div>
+						</div>
+            <div class="form-group">
+						  <label class="col-sm-3 control-label" for="company">Company</label>
+							<div class="col-sm-9" style="margin-bottom:15px;">
+							  <input class="form-control" type="text" id="company" name="company">
+							</div>
+						</div>
+            <div class="form-group">
+              <label class="col-sm-3 control-label" for="required-email">Email</label>
+							<div class="col-sm-9" style="margin-bottom:15px;">
+							  <input class="form-control" type="text" id="required-email" name="required-email">
+							</div>
+						</div>
+						<div class="form-group">
+						  <label class="col-sm-3 control-label" for="vat-number">VAT Number</label>
+							<div class="col-sm-9" style="margin-bottom:15px;">
+							  <input class="form-control" type="text" id="vat-number" name="vat-number">
+							</div>
+						</div>
+						<div class="form-group">
+						  <label class="col-sm-3 control-label" for="required-address">Address</label>
+							<div class="col-sm-9" style="margin-bottom:15px;">
+							  <textarea class="form-control" id="required-address" name="required-address"></textarea>
+							</div>	
+						</div>
+						<div class="form-group">
+						  <label class="col-sm-3 control-label" for="required-tel">Contact Number</label>
+							<div class="col-sm-9" style="margin-bottom:15px;">
+							  <input class="form-control" type="text" id="required-tel"" name="required-tel">
+							</div>
+						</div>
+						<div class="form-group">
+						  <label class="col-sm-3 control-label" for="productField">Product</label>
+							<div class="col-sm-9" style="margin-bottom:15px;">
+							  <input class="form-control" type="text" id="productField" name="productField">
+							</div>
+						</div>
+						<div class="form-group">
+						  <label class="col-sm-3 control-label" for="qty">Quantity</label>
+							<div class="col-sm-9" style="margin-bottom:15px;">
+							  <input class="form-control" type="text" id="qty" name="qty">
+							</div>
+						</div>  
+            <div class="form-group" style=" padding-bottom:0; margin-bottom:0">
+						  <label class="col-sm-3 control-label" for="deadline" style="display: inline-block; text-align: left;">Production Deadline</label>
+							<div class="col-sm-3" style="display: inline-block; font-weight: normal; margin-bottom:15px;">
+							  <input class="form-control" type="text" id="deadline" name="deadline">
+							</div>
+						</div>
+						<div class="form-group form-inline" action="upload.php" method="post" enctype="multipart/form-data" style="margin-left:15px;">
+							<p style="margin-bottom:15px;">If you have a <a href="../more/vector.html">Vector logo</a>, upload it here or email the logo to us and we will do a design layout for you.</p>
+							<input class="btn btn-default" type="file" name="fileToUpload" id="fileToUpload" style="display: inline-block; margin:0;"> 
+							<input class="btn btn-default" type="submit" value="Upload Image" name="upload" style="display: inline-block; margin:0;">							
+						</div>
+             <div class="form-group" align="center">
+								<button type="submit" class="btn btn-default">submit</button>
+                <button type="reset" class="btn btn-default">reset</button>
+								<input name="success" type="hidden" value="http://www.giantinflatables.co.za/orderform/thankyou.html">
+								<input name="failure" type="hidden" value="http://www.giantinflatables.co.za/contact/failure.html">
+							</div> 
+          </form>      
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  </body>
+</html>
